@@ -27,11 +27,9 @@
         "Dharuna\\LaravelSalfat\\": "src"
 		
     },
-   
-},
+   },
 
-	
-    "autoload-dev": {
+	    "autoload-dev": {
         "psr-4": {
             "Dharuna\\LaravelSalfat\\Tests\\": "tests"
         }
