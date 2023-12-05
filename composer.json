@@ -24,11 +24,10 @@
    
 	"autoload": {
     "psr-4": {
-        "Dharuna\\LaravelSalfat\\": "dharuna/laravel-salfat/src/"
+        "Dharuna\\LaravelSalfat\\": "src"
+		
     },
-    "files": [
-        "dharuna/laravel-salfat/config/laravel-salfat.php"
-    ]
+   
 },
 
 	
