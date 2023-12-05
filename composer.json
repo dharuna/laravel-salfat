@@ -21,11 +21,17 @@
     "require-dev": {
         "phpunit/phpunit": "^9.0"
     },
-    "autoload": {
-        "psr-4": {
-            "Dharuna\\LaravelSalfat\\": "src"
-        }
+   
+	"autoload": {
+    "psr-4": {
+        "Dharuna\\LaravelSalfat\\": "dharuna/laravel-salfat/src/"
     },
+    "files": [
+        "dharuna/laravel-salfat/config/laravel-salfat.php"
+    ]
+},
+
+	
     "autoload-dev": {
         "psr-4": {
             "Dharuna\\LaravelSalfat\\Tests\\": "tests"
