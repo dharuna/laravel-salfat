@@ -16,19 +16,14 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-		 "illuminate/support": "^10.0",
-        "guzzlehttp/guzzle": "^7.0",
-        "ext-json": "*"
+        "php": "^7.4|^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.0",
-        "phpunit/phpunit": "^10.5"
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Dharuna\\LaravelSalfat\\": "src/LaravelSalfat"
-			
+            "Dharuna\\LaravelSalfat\\": "src"
         }
     },
     "autoload-dev": {
@@ -43,15 +38,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-	"extra": {
-        "laravel": {
-            "providers": [
-                "Dharuna\\LaravelSalfat\\LaravelSalfatServiceProvider"
-            ],
-            "aliases": {
-                "LaravelSalfat": "Dharuna\\LaravelSalfat\\Facades\\LaravelSalfat"
-            }
-        }
     }
 }
