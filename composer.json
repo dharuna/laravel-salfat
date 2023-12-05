@@ -1,0 +1,57 @@
+{
+    "name": "dharuna/laravel-salfat",
+    "description": "Laravel Package for Salfat's API; A data and bills payment platform for Nigerians.  www.salfat.com.ng",
+    "keywords": [
+        "dharuna",
+        "laravel-salfat"
+    ],
+    "homepage": "https://github.com/dharuna/laravel-salfat",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Danladi Z. Haruna",
+            "email": "danladiharuna@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+		 "illuminate/support": "^10.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dharuna\\LaravelSalfat\\": "src/LaravelSalfat"
+			
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dharuna\\LaravelSalfat\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Dharuna\\LaravelSalfat\\LaravelSalfatServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSalfat": "Dharuna\\LaravelSalfat\\Facades\\LaravelSalfat"
+            }
+        }
+    }
+}
